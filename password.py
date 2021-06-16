@@ -5,6 +5,8 @@ while times > 0:
 	if pwd == password:
 		print('You are log in!')
 		break # escape the loop
-	else:
-		print('Password is incorrect! You can try' , times, 'times.')
+	else if times > 0:
+		print('Password is incorrect!')
 		times = times - 1
+		if times > 0:
+			print('You can try' , times, 'times.')
